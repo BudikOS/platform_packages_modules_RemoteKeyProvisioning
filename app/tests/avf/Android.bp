@@ -4,6 +4,8 @@ package {
 
 android_test {
     name: "AvfRkpdAppIntegrationTests",
+    // the virtualization stack is not built on the gsi
+    enabled: false,
     srcs: ["src/**/*.java"],
     static_libs: [
         "MicrodroidDeviceTestLib",
